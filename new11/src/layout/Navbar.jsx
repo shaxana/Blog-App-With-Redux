@@ -11,21 +11,14 @@ import { Link } from 'react-router-dom';
 export default function ButtonAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+      <AppBar position="static" style={{backgroundColor:'white'}}>
+        <Toolbar style={{display:'flex', justifyContent:'center'}}>
+          <h1 style={{color:'black'}}>Blogs</h1>
+         
+          <Typography variant="h6" component="div" style={{marginLeft:"800px", marginRight:"30px"}}>
            <Link to="/">Blogs</Link>
           </Typography> 
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} style={{marginLeft:'30px'}} >
             <Link to="/postblog">Post Blog</Link>
           </Typography>
         </Toolbar>

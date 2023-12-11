@@ -11,7 +11,7 @@ export const blogSlice = createSlice({
     },
     editBlog: (state,action) => {
       const {id, name, description} = action.payload
-     const existingBlog = state.find(blog => blog.id === id)
+     const existingBlog = state.blogs.find(blog => blog.id === id)
      if (existingBlog){
       existingBlog.name = name,
       existingBlog.description = description
