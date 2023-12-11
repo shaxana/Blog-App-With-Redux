@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "user1",
+      "password": "password1"
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "name": "blog1",
+      "description": "desc1"
+    },
+    {
+      "name": "first blog",
+      "description": "first blog",
+      "id": 2
+    },
+    {
+      "name": "second blog",
+      "description": "second blog description",
+      "id": 3
+    }
+  ]
+}
